@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="reportsDataSet" targetNamespace="http://tempuri.org/reportsDataSet.xsd" xmlns:mstns="http://tempuri.org/reportsDataSet.xsd" xmlns="http://tempuri.org/reportsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DBHotelManagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBHotelManagementConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ThunderBirdHotel.My.MySettings.GlobalReference.Default.DBHotelManagementConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="reportsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="reportsDataSet" msprop:Generator_UserDSName="reportsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_reports" msprop:Generator_TableClassName="tbl_reportsDataTable" msprop:Generator_TableVarName="tabletbl_reports" msprop:Generator_TablePropName="tbl_reports" msprop:Generator_RowDeletingName="tbl_reportsRowDeleting" msprop:Generator_RowChangingName="tbl_reportsRowChanging" msprop:Generator_RowEvHandlerName="tbl_reportsRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_reportsRowDeleted" msprop:Generator_UserTableName="tbl_reports" msprop:Generator_RowChangedName="tbl_reportsRowChanged" msprop:Generator_RowEvArgName="tbl_reportsRowChangeEvent" msprop:Generator_RowClassName="tbl_reportsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Transaction_No" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransaction_No" msprop:Generator_ColumnPropNameInRow="Transaction_No" msprop:Generator_ColumnPropNameInTable="Transaction_NoColumn" msprop:Generator_UserColumnName="Transaction_No" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Checked_In" msprop:Generator_ColumnVarNameInTable="columnChecked_In" msprop:Generator_ColumnPropNameInRow="Checked_In" msprop:Generator_ColumnPropNameInTable="Checked_InColumn" msprop:Generator_UserColumnName="Checked_In" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Checked_Out" msprop:Generator_ColumnVarNameInTable="columnChecked_Out" msprop:Generator_ColumnPropNameInRow="Checked_Out" msprop:Generator_ColumnPropNameInTable="Checked_OutColumn" msprop:Generator_UserColumnName="Checked_Out" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Total_Price" msprop:Generator_ColumnVarNameInTable="columnTotal_Price" msprop:Generator_ColumnPropNameInRow="Total_Price" msprop:Generator_ColumnPropNameInTable="Total_PriceColumn" msprop:Generator_UserColumnName="Total_Price" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Arrival_Time" msprop:Generator_ColumnVarNameInTable="columnArrival_Time" msprop:Generator_ColumnPropNameInRow="Arrival_Time" msprop:Generator_ColumnPropNameInTable="Arrival_TimeColumn" msprop:Generator_UserColumnName="Arrival_Time" type="xs:duration" minOccurs="0" />
+              <xs:element name="Departure_Time" msprop:Generator_ColumnVarNameInTable="columnDeparture_Time" msprop:Generator_ColumnPropNameInRow="Departure_Time" msprop:Generator_ColumnPropNameInTable="Departure_TimeColumn" msprop:Generator_UserColumnName="Departure_Time" type="xs:duration" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_reports" />
+      <xs:field xpath="mstns:Transaction_No" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
